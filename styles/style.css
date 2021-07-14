@@ -8,7 +8,10 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
 /* header section styles  */
 
 header{
@@ -37,6 +40,7 @@ header{
     color: white;
     background-color: #E02C6D;
     padding: 10px 24px 10px 24px;
+    transition: .5s;
 
 }
 
@@ -68,13 +72,41 @@ i.fas.fa-arrow-right {
     width: 100%;
 }
 
+
+
+ /* videos section        */
+
+#video-shorts {
+    margin: 70px 180px;
+}
+
+.videos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 28px;  
+}
+
+/* partners section  */
+#our-partners{
+    margin: 70px 180px;
+}
+.partners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.partner img{
+    width: 100%;
+    transition: .7s;
+}
 /* footer styles  */
 footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 63px;
+    margin: 63px 0px;
 }
 
 .footer-logo img{
@@ -93,24 +125,6 @@ footer{
 .copyright {
     font-size: 18px;
 }
-
- /* videos section        */
-
-#video-shorts {
-    margin: 70px 180px;
-}
-
-#video-shorts h2{
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-.videos{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 28px;  
-}
-
-
         /*----------------
         Mobile devices
         --------------- */
@@ -163,6 +177,21 @@ footer{
                 grid-gap: 28px;  
             }
 
+            /* .partner responsive */
+            #our-partners{
+                margin: 70px 16px;
+            }
+            .partners{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .partner img{
+                width: 150px;
+                transition: .7s;
+            }
+
             /* footer responsive */
             .footer-logo img{
                 width: 271px;
@@ -209,11 +238,36 @@ footer{
                 grid-template-columns: repeat(2,1fr);
                 grid-gap: 28px;  
             }
-            
+            /* .partner responsive */
+            #our-partners{
+                margin: 70px 62px;
+            }
+            .partners{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .partner img{
+                width: 250px;
+                transition: .7s;
+            }
+
             /* footer responsive */
 
             .footer-logo img {
                 width: 260px;
                 height: 90px;
             }
+        }
+
+
+        /* hover effect */
+
+        .head-button a:hover {
+            background-color: #e02c6dd9;
+            padding: 10px 35px;
+        }
+        .partner img:hover{
+            transform: scale(1.2);
         }
