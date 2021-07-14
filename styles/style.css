@@ -51,6 +51,7 @@ i.fas.fa-arrow-right {
 .head-right img{
     Width:556.01px;
     Height:438px;
+    transition: .4s;
 }
 
 /* player section style  */
@@ -273,6 +274,9 @@ footer{
         .head-button a:hover {
             background-color: #e02c6dd9;
             padding: 10px 35px;
+        }
+        .head-right img:hover{
+            transform: scale(1.1);
         }
         .partner img:hover{
             transform: scale(1.2);
